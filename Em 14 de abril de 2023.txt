@@ -1,0 +1,13 @@
+Em: 14 de abril de 2023
+	Matriz
+	Alexandre de O. Zamberlan
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Matriz: Uma matriz em C# é uma estrutura de dados bidimensional que armazena uma coleção de elementos de um mesmo tipo. Ela é definida com a palavra-chave "int[,] nomeDaMatriz" seguida do número de linhas e colunas, por exemplo:
+
+	int[,] matriz = new int[3, 4];
+Essa declaração cria uma matriz com 3 linhas e 4 colunas, ou seja, 12 elementos no total. Cada elemento pode ser acessado especificando sua posição na matriz, por exemplo:
+
+	matriz[0, 0] = 1; // Define o elemento da primeira linha e primeira coluna como 1
+	int valor = matriz[2, 3]; // Acessa o valor do elemento da terceira linha e quarta coluna
+As matrizes em C# são úteis para armazenar e manipular dados em tabelas ou grades, e podem ser usadas em várias aplicações, como jogos, processamento de imagens e análise de dados.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------

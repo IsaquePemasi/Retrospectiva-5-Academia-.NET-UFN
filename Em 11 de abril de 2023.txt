@@ -1,0 +1,40 @@
+Em: 11 de abril de 2023
+	Estruturas de repetição, estruturas de condição
+	Ricardo Frohlich da Silva
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Estruturas de condição: Em C#, as estruturas de condição são utilizadas para tomar decisões com base em uma expressão ou condição específica. Existem duas estruturas de condição principais em C#: o "if" e o "switch".
+
+"if": A estrutura "if" é utilizada para testar uma condição específica e executar um bloco de código caso a condição seja verdadeira. A sintaxe básica é a seguinte:
+
+	if (condição) {
+  	// bloco de código a ser executado caso a condição seja verdadeira
+	}
+
+É possível adicionar cláusulas adicionais à estrutura "if", como "else if" e "else", para testar condições adicionais e executar blocos de código alternativos. A sintaxe completa é a seguinte:
+
+	if (condição1) {
+  	// bloco de código a ser executado caso a condição1 seja verdadeira
+	}
+	else if (condição2) {
+ 	 // bloco de código a ser executado caso a condição2 seja verdadeira
+	}
+	else {
+ 	 // bloco de código a ser executado caso nenhuma das condições anteriores seja verdadeira
+	}
+
+"switch": A estrutura "switch" é utilizada para testar uma expressão e executar um bloco de código correspondente ao valor dessa expressão. A sintaxe básica é a seguinte:
+
+	switch (expressão) {
+ 	 case valor1:
+  	  // bloco de código a ser executado caso a expressão seja igual a valor1
+   	 break;
+ 	 case valor2:
+   	 // bloco de código a ser executado caso a expressão seja igual a valor2
+   	 break;
+ 	 default:
+   	 // bloco de código a ser executado caso a expressão não seja igual a nenhum dos valores anteriores
+   	 break;
+	}
+
+É importante lembrar que a estrutura "switch" só pode ser utilizada com tipos primitivos, como números e caracteres, e que cada "case" deve ser finalizado com a palavra-chave "break" para evitar a execução de blocos de código desnecessários.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
