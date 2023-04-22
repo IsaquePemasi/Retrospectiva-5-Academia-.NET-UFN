@@ -38,3 +38,4 @@ Em: 10 de abril de 2023
 
 É importante lembrar que a estrutura "switch" só pode ser utilizada com tipos primitivos, como números e caracteres, e que cada "case" deve ser finalizado com a palavra-chave "break" para evitar a execução de blocos de código desnecessários.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/exercicios10-04-23
