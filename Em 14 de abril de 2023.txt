@@ -1,5 +1,5 @@
 Em: 14 de abril de 2023
-	Matriz
+	Matriz, listas e dicionarios
 	Alexandre de O. Zamberlan
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 	Matriz: Uma matriz em C# é uma estrutura de dados bidimensional que armazena uma coleção de elementos de um mesmo tipo. Ela é definida com a palavra-chave "int[,] nomeDaMatriz" seguida do número de linhas e colunas, por exemplo:
@@ -11,3 +11,38 @@ Essa declaração cria uma matriz com 3 linhas e 4 colunas, ou seja, 12 elemento
 	int valor = matriz[2, 3]; // Acessa o valor do elemento da terceira linha e quarta coluna
 As matrizes em C# são úteis para armazenar e manipular dados em tabelas ou grades, e podem ser usadas em várias aplicações, como jogos, processamento de imagens e análise de dados.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Listas: Em C#, uma lista é uma estrutura de dados dinâmica que pode conter um número variável de elementos do mesmo tipo. Ela é implementada pela classe "List<T>" e oferece métodos para adicionar, remover, pesquisar e ordenar elementos.
+
+A declaração de uma lista em C# pode ser feita da seguinte forma:
+
+ List<int> numeros = new List<int>();
+Nesse exemplo, criamos uma lista vazia que pode conter elementos inteiros. Para adicionar um elemento à lista, usamos o método "Add":
+
+ numeros.Add(10);
+Também é possível inicializar uma lista com elementos já definidos:
+
+ List<string> nomes = new List<string>{"João", "Maria", "Pedro"};
+Para acessar um elemento da lista, utilizamos o operador de índice:
+
+ string primeiroNome = nomes[0]; // "João"
+Além disso, podemos percorrer todos os elementos de uma lista usando um loop "foreach":
+
+ foreach (int numero in numeros)
+ {
+     Console.WriteLine(numero);
+ }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Dicionários: Em C#, dicionários são estruturas de dados que mapeiam chaves (keys) a valores (values). Eles são definidos na biblioteca padrão do .NET Framework como a classe Dictionary<TKey, TValue>.
+
+Para criar um dicionário em C#, você precisa primeiro instanciar a classe Dictionary<TKey, TValue> e, em seguida, adicionar pares chave-valor. Aqui está um exemplo de como criar um dicionário em C#:
+
+ using System.Collections.Generic;
+
+ // criando um dicionário com nomes de frutas e suas cores
+ Dictionary<string, string> frutasECores = new Dictionary<string, string>();
+
+ // adicionando pares chave-valor ao dicionário
+ frutasECores.Add("maçã", "vermelha");
+ frutasECores.Add("banana", "amarela");
+ frutasECores.Add("limão", "verde");
+Neste exemplo, string é o tipo de dado usado tanto para as chaves como para os valores do dicionário. Você pode substituir string por qualquer outro tipo de dados que desejar.

@@ -1,0 +1,11 @@
+Em: 18 de abril de 2023
+	Jogo da velha, em C#
+	Ricardo Frohlich da Silva
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	O jogo da velha é um jogo clássico para dois jogadores que é jogado em um tabuleiro de 3x3. Cada jogador usa um símbolo diferente (normalmente "X" ou "O") e o objetivo é conseguir três símbolos iguais em linha, coluna ou diagonal.
+
+Para começar, você pode desenhar um tabuleiro de 3x3 em um papel ou criar um tabuleiro virtual. Então, um jogador escolhe seu símbolo e começa a jogar, colocando seu símbolo em uma das células do tabuleiro. O segundo jogador, em seguida, escolhe seu símbolo e coloca-o em uma célula não ocupada.
+
+Os jogadores continuam alternando até que um jogador consiga três símbolos iguais em linha, coluna ou diagonal, ou até que todas as células do tabuleiro sejam preenchidas sem que nenhum jogador tenha ganhado. Se um jogador conseguir três símbolos iguais em linha, coluna ou diagonal, ele ganha o jogo. Se todas as células do tabuleiro forem preenchidas e nenhum jogador conseguir três símbolos iguais, o jogo termina em empate.
+
+O jogo da velha é um jogo simples, mas pode ser muito divertido e desafiador. Boa sorte e divirta-se jogando!

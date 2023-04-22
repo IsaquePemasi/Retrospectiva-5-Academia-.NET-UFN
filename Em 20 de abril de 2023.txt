@@ -1,0 +1,11 @@
+Em: 20 de abril de 2023
+	Introdução ao HTML
+	Fabrício Tonetto Londero
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Introdução ao HTML: HTML, ou HyperText Markup Language, é uma linguagem de marcação usada para criar páginas web. É a base da maioria dos sites na internet.
+
+O HTML é uma linguagem de marcação, o que significa que você usa tags para marcar partes do conteúdo para que o navegador possa entender como exibi-lo. As tags são cercadas por colchetes angulares < >. Por exemplo, <html> é uma tag que marca o início de um documento HTML, enquanto </html> marca o fim do documento.
+
+Um documento HTML geralmente começa com uma tag <html> e termina com uma tag </html>. Entre essas tags, há duas seções principais: a seção do cabeçalho (head) e a seção do corpo (body). O cabeçalho contém informações sobre a página, como o título e metadados, enquanto o corpo contém o conteúdo real que o usuário vê.
+
+Além disso, o HTML permite que você crie links, imagens, listas, tabelas e muito mais. Combinado com o CSS e o JavaScript, o HTML pode ser usado para criar páginas da web interativas e estilizadas.
