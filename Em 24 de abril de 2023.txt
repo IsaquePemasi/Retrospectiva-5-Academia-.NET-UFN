@@ -1,0 +1,12 @@
+Em: 24 de abril de 2023
+	formulários
+	Ricardo Frohlich da Silva
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	formulários: Formulários em HTML são elementos que permitem que os usuários interajam com um site, inserindo dados ou selecionando opções. Eles consistem em uma série de campos de entrada, como caixas de texto, botões de opção, menus suspensos e botões de envio, além de elementos de rótulo para identificar o que cada campo de entrada representa.
+
+Os formulários são definidos com a tag <form> e podem incluir atributos como action (que especifica o URL para o qual os dados serão enviados quando o formulário for enviado) e method (que especifica o método HTTP a ser usado para enviar os dados, geralmente "GET" ou "POST").
+
+Cada campo de entrada é definido com uma tag diferente, dependendo do tipo de entrada que se deseja. Por exemplo, uma caixa de texto é criada com a tag <input type="text">, enquanto um menu suspenso é criado com a tag <select> e uma lista de opções com a tag <option>.
+
+Quando um usuário envia um formulário, os dados são coletados em um formato especificado pelo atributo enctype do formulário e enviados para o servidor para processamento posterior.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
