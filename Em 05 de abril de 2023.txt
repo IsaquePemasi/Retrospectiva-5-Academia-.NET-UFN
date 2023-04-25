@@ -52,5 +52,4 @@ A álgebra é usada em muitas áreas da matemática, da física e das ciências 
 
 Os matemáticos usam a álgebra para resolver problemas em diversas áreas, desde a computação até a teoria dos números, passando pela física, engenharia e finanças. A álgebra é uma ferramenta essencial para a resolução de problemas complexos e para a compreensão da matemática em um nível mais avançado.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/exercicios05-04-23
-	
+https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/a0405	

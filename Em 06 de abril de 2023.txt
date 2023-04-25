@@ -129,4 +129,4 @@ Neste exemplo, o valor da variável "diaSemana" é 4, então o bloco de código 
 
 É importante lembrar que a estrutura "switch" só pode ser utilizada com tipos primitivos, como números e caracteres, e que cada "case" deve ser finalizado com a palavra-chave "break" para evitar a execução de blocos de código desnecessários.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/exercicios06-04-23
+https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/a0406

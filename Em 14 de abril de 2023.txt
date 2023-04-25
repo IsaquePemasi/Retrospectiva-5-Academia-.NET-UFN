@@ -47,4 +47,4 @@ Para criar um dicionário em C#, você precisa primeiro instanciar a classe Dict
  frutasECores.Add("limão", "verde");
 Neste exemplo, string é o tipo de dado usado tanto para as chaves como para os valores do dicionário. Você pode substituir string por qualquer outro tipo de dados que desejar.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/exercicios14-04-23
+https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/a0414
