@@ -1,0 +1,12 @@
+Em: 25 de abril de 2023
+	DIV, id, class, CSS e flexbox.
+	Ricardo Frohlich da Silva
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	DIV: A tag DIV é usada para definir uma seção genérica em uma página HTML, geralmente usada para agrupar outros elementos HTML e aplicar estilos e formatação a eles.
+
+	ID: O ID é um atributo que é usado para identificar exclusivamente um elemento HTML em uma página. Ele é definido como um nome exclusivo e pode ser usado para aplicar estilos e manipular o elemento por meio de JavaScript.
+
+	Classe: Classe é um atributo que é usado para agrupar elementos HTML com estilos semelhantes. Diferente do ID, uma classe pode ser aplicada a vários elementos na mesma página, permitindo que você aplique estilos e formatação a vários elementos ao mesmo tempo. A classe é definida como um nome que pode ser reutilizado em vários elementos da página.
+
+	Flexbox: Flexbox é um modelo de layout em web design que permite que os elementos dentro de um contêiner sejam organizados e alinhados de maneira flexível e dinâmica. É um recurso CSS que ajuda os designers a criar layouts responsivos e versáteis sem a necessidade de código complexo ou estruturas adicionais. Com o flexbox, os elementos podem ser redimensionados, reordenados e alinhados ao longo de um único eixo (horizontal ou verticalmente) ou em ambos os eixos. Também possibilita a criação de layouts complexos com igual distribuição do espaço disponível, independente do tamanho ou quantidade de itens no container. No geral, o flexbox fornece uma ferramenta poderosa e fácil de usar para criar layouts da Web flexíveis, dinâmicos e responsivos.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
