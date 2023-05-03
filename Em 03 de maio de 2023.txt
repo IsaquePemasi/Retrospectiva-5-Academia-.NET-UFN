@@ -2,6 +2,18 @@ Em: 03 de maio de 2023
 	Introdução Javascript, DOM
 	Fabrício Tonetto Londero
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Introdução Javascript: JavaScript é uma linguagem de programação de alto nível e dinâmica que é frequentemente utilizada para desenvolver aplicativos web interativos e dinâmicos. Ele foi criado por Brendan Eich em 1995 e é uma das principais linguagens de programação para a web, juntamente com HTML e CSS.
 
+JavaScript é uma linguagem interpretada, o que significa que o código é executado diretamente no navegador do usuário, sem a necessidade de compilação prévia. Isso torna o desenvolvimento mais rápido e fácil de gerenciar, além de permitir que os desenvolvedores criem interações dinâmicas com os usuários.
+
+A linguagem é flexível e oferece uma ampla gama de recursos, incluindo suporte para programação orientada a objetos, manipulação de eventos, animação de elementos HTML, comunicação com servidores web e muito mais. Com o uso de bibliotecas e frameworks populares, como React e Angular, os desenvolvedores podem criar aplicativos web complexos e escaláveis com facilidade.
+
+JavaScript é uma das linguagens de programação mais populares do mundo, com uma grande comunidade de desenvolvedores que criam recursos e ferramentas para melhorar a experiência de desenvolvimento. Se você está interessado em desenvolver aplicativos web dinâmicos e interativos, aprender JavaScript é uma habilidade valiosa e essencial.
+
+	DOM: DOM significa "Document Object Model" (Modelo de Objeto de Documento) em JavaScript. É uma interface de programação de aplicações (API) que representa o conteúdo HTML de uma página da web como uma árvore de objetos, onde cada elemento HTML é representado por um objeto e os objetos são interconectados de acordo com sua estrutura hierárquica.
+
+O DOM permite que os programadores acessem e manipulem o conteúdo e a estrutura de uma página da web usando JavaScript. Por exemplo, um desenvolvedor pode usar o DOM para alterar o texto de um elemento HTML, adicionar ou remover elementos da página, ouvindo eventos de entrada do usuário, e assim por diante.
+
+O DOM é uma parte fundamental da web moderna e é suportado por todos os navegadores web modernos. Ele permite que os desenvolvedores criem páginas dinâmicas e interativas usando JavaScript e outras linguagens de programação web.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/a0503
