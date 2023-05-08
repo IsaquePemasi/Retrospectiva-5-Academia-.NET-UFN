@@ -1,0 +1,11 @@
+Em: 08 de maio de 2023
+	Encapsulamento 
+	Ricardo Frohlich da Silva
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	Encapsulamento: Em C#, encapsulamento é um conceito de programação orientada a objetos que permite controlar o acesso aos membros de uma classe, como campos, propriedades, métodos e eventos.
+
+Isso significa que a classe pode determinar quais membros são acessíveis de fora da classe e quais membros só podem ser acessados dentro da classe. O encapsulamento é importante para proteger os dados da classe de alterações não autorizadas, garantindo que apenas as partes necessárias da classe sejam expostas publicamente.
+
+Em C#, o encapsulamento é implementado usando modificadores de acesso, como "public", "private", "protected" e "internal", que determinam a visibilidade dos membros da classe. O modificador "public" permite que um membro seja acessado de qualquer lugar, enquanto o modificador "private" torna o membro acessível apenas dentro da classe. O modificador "protected" permite que um membro seja acessado dentro da classe e em subclasses, e o modificador "internal" permite que um membro seja acessado apenas dentro do mesmo assembly.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+https://github.com/IsaquePemasi/academia_AtosUFN_DotNet/tree/master/a0508
