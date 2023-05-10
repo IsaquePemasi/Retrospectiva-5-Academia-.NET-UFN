@@ -9,11 +9,60 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        .color-change-5x {
+            -webkit-animation: color-change-5x 8s linear infinite alternate both;
+            animation: color-change-5x 8s linear infinite alternate both
+        }
 
+        @-webkit-keyframes color-change-5x {
+            0% {
+                background: #19dcea
+            }
+
+            25% {
+                background: #b22cff
+            }
+
+            50% {
+                background: #ea2222
+            }
+
+            75% {
+                background: #f5be10
+            }
+
+            100% {
+                background: #3bd80d
+            }
+        }
+
+        @keyframes color-change-5x {
+            0% {
+                background: #19dcea
+            }
+
+            25% {
+                background: #b22cff
+            }
+
+            50% {
+                background: #ea2222
+            }
+
+            75% {
+                background: #f5be10
+            }
+
+            100% {
+                background: #3bd80d
+            }
+        }
+    </style>
     <title>Retrospectiva</title>
 </head>
 
-<body>
+<body class="color-change-5x">
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="index.html">Calendário</a>
@@ -44,49 +93,70 @@
     </header>
 
     <main>
-        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 font-weight-normal">Título legal</h1>
-                <p class="lead font-weight-normal">E uma descrição engraçadinha, para continuar. Alavanque seus esforços
-                    em marketing com esse exemplo, baseado nas páginas de marketing da Apple.</p>
-                <a class="btn btn-outline-secondary" href="#">Em breve</a>
+        <div>
+            <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+                <div class="col-md-5 p-lg-5 mx-auto my-5">
+                    <h1 class="display-4 font-weight-normal">Retrospectiva 5ª Academia .Net Atos</h1>
+                    <p class="lead font-weight-normal">No final deste emocionante curso de .NET, é hora de olharmos para
+                        trás
+                        e refletir sobre a jornada que percorremos juntos.</p>
+                    <a class="btn btn-outline-secondary" href="#">Em breve</a>
+                </div>
+                <div class="product-device shadow-sm d-none d-md-block"></div>
+                <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
             </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
         <hr class="featurette-divider">
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">Primeiro título de featurezinhas. <span class="text-muted">Supreendente,
+                <h2 class="featurette-heading">Jogo da Velha. <span class="text-muted">Supreendente,
                         não?!</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod
-                    semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac
-                    cursus
-                    commodo.</p>
+                <p class="lead">Desenvolva um jogo da velha utilizando matrizes em C#. Faça com que cada jogador insira
+                    a sua jogada em uma interface amigavel. Teste se a posição é válida e caso não seja solicite ao
+                    jogador repetir a jogada. Após cada jogada, apresente o tabuleiro com as jogadas representadas por
+                    "X" e "O" e faça a verficação se algum jogador venceu. Caso seja empate, apresente o resultado na
+                    tela. Possilibilite que o jogo seja reinicializado sem a necessidade de reiniciar o jogo.
+
+                    Desafio extra, pode valer por alguma atividade futura: Faça a implementação de um jogo contra o
+                    computador. Faça o possível para evitar que o jogador vença do computador. Para facilitar, faça com
+                    que o computador inicie jogando.</p>
             </div>
             <div class="col-md-5">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                    style="width: 500px; height: 500px;"
-                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18807be792b%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18807be792b%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.1171875%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                    data-holder-rendered="true">
+                    style="width: 500px; height: 500px;" src="./img/jogoDaVelha.png" data-holder-rendered="true">
             </div>
         </div>
         <hr class="featurette-divider">
         <div class="row featurette">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">Aêêê, moleque! <span class="text-muted">Tá legal ou não tá?</span></h2>
-                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis
-                    euismod
-                    semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac
-                    cursus
-                    commodo.</p>
+                <h2 class="featurette-heading">Brinquedos DB <span class="text-muted">Tá legal ou não tá?</span></h2>
+                <p class="lead">Desenvolva um site para uma empresa, com todas informações da empresa. A página deve
+                    possuir, no mínimo, os seguintes requisitos (ou reutilize uma já desenvolvida que possua no mínimo 4
+                    páginas html):
+
+                    - Página inicial: crie uma página inicial que apresente uma breve introdução ao site e tenha um menu
+                    de navegação com links para outras páginas do site.
+                    - Página "Sobre": crie uma página "Sobre" que inclua informações sobre o criador do site e sua
+                    finalidade.
+                    - Página "Contato": crie uma página "Contato" que inclua um formulário de contato básico com campos
+                    para nome, email e mensagem. Após clicar em enviar, será encaminhada para uma página onde aparecerá
+                    a mensagem que foi enviada e terá a possibilidade de voltar para a página inicial.
+                    - Página "Galeria": crie uma página "Galeria" que inclua uma galeria de imagens relacionadas ao tema
+                    do site.
+                    - Em alguma das páginas deve existir uma tabela onde apresente dados, por exemplo, dados
+                    comparativos de modelos de algum aparelho.
+                    Além disso, o menu de navegação deverá existir em todas as páginas para que possibilite a navegação
+                    completa em todas as páginas.
+                    Faça com que as páginas HTML possuam no minimo 4 classes distintas. Cada classe deverá ter
+                    propriedades alteradas, busque ter no minimo 5 propriedades no CSS.
+                    Além disso, faça aplicação de estilos em elementos utilizando ID. Utilize divs para auxiliar.
+                    Busque uma interface agradável aos olhos do usuário.
+                    Na elaboração das páginas, utilize as tags que possuem ênfase na melhora do SEO do site proposto.
+                </p>
             </div>
             <div class="col-md-5 order-md-1">
                 <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500"
-                    style="width: 500px; height: 500px;"
-                    src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_18807be792d%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_18807be792d%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.1171875%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                    data-holder-rendered="true">
+                    style="width: 500px; height: 500px;" src="./img/brinquedosDB.png" data-holder-rendered="true">
             </div>
         </div>
         <hr class="featurette-divider">
