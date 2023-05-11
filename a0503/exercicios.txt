@@ -1,0 +1,3 @@
+01. Mostrar os números impares de 1 à 10
+02. Calcule e mostre a soma dos numeros 1 até o 100
+03. Adaptar esse exemplo para ele mostrar quantas vezes o botão foi clicado.Quando atingir 5 cliques, não mostra mais mensagens.
