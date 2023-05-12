@@ -115,19 +115,35 @@
     </header>
 
     <main role="main" class="inner cover">
-        <h1 class="cover-heading">Aula de  ()</h1>
-        <p class="lead"><strong>Entrada e saída de dados:</strong>Em C#, um vetor é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo em
-            uma única sequência contígua de memória. Cada elemento é acessado por um índice que representa sua posição
-            no vetor.
+        <h1 class="cover-heading">Aula de Funções (Fabrício Tonetto Londero)</h1>
+        <p class="lead"><strong>Funções:</strong>	 Em C#, uma função é um bloco de código que realiza uma tarefa específica e pode ser chamado a partir de outro lugar no programa. As funções também são conhecidas como métodos em C#. As funções podem ter zero ou mais parâmetros de entrada e podem retornar um valor ou não.
 
-            Para criar um vetor em C#, você pode declarar uma variável com um tipo de dados de vetor, seguido por um par
-            de colchetes vazio [] para indicar que é um vetor. Por exemplo:
-
-            int[] numeros;</p>
+            Para definir uma função em C#, você precisa seguir a seguinte sintaxe:
+            
+                <modificador de acesso> <tipo de retorno> <nome da função>(<parâmetros>) {
+                    // Código a ser executado
+                    return <valor de retorno>;
+                }
+            Onde:
+            
+                <modificador de acesso>: Define o nível de acesso à função (por exemplo, public, private, protected).
+                <tipo de retorno>: Define o tipo de dado que a função retorna (por exemplo, int, string, void se não retornar nada).
+                <nome da função>: Define o nome da função.
+                <parâmetros>: Define os parâmetros de entrada da função, se houver.
+                <código a ser executado>: Define o bloco de código que será executado quando a função for chamada.
+                <valor de retorno>: Define o valor que a função retorna, se houver.
+            Aqui está um exemplo de uma função simples que recebe dois números inteiros como entrada e retorna sua soma:
+            
+            
+                public int Somar(int num1, int num2) {
+                    int resultado = num1 + num2;
+                    return resultado;
+                }
+            Neste exemplo, a função é declarada como pública e retorna um inteiro. Ela recebe dois parâmetros, num1 e num2, que são adicionados para produzir o resultado. O valor de retorno é a soma dos dois números.</p>
             <hr class="featurette-divider">
 
         <p class="lead">
-            <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0404"
+            <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0419"
                 class="btn btn-lg btn-secondary">Saiba mais</a>
         </p>
     </main>

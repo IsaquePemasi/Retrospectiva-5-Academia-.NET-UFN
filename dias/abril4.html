@@ -115,17 +115,34 @@
     </header>
 
     <main role="main" class="inner cover">
-        <h1 class="cover-heading">Aula de  ()</h1>
-        <p class="lead"><strong>Entrada e saída de dados:</strong>Em C#, um vetor é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo em
+        <h1 class="cover-heading">Aula de Vetores (Fabrício Tonetto Londero)</h1>
+        <p class="lead">Em C#, um vetor é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo em
             uma única sequência contígua de memória. Cada elemento é acessado por um índice que representa sua posição
             no vetor.
 
             Para criar um vetor em C#, você pode declarar uma variável com um tipo de dados de vetor, seguido por um par
             de colchetes vazio [] para indicar que é um vetor. Por exemplo:
 
-            int[] numeros;</p>
-            <hr class="featurette-divider">
+            int[] numeros;
+            Isso cria um vetor de inteiros vazio que pode armazenar um número desconhecido de elementos.
 
+            Você pode inicializar o vetor com elementos na declaração ou mais tarde, usando uma sintaxe de inicialização
+            de matriz. Por exemplo:
+
+            int[] numeros = { 1, 2, 3, 4, 5 };
+            Isso cria um vetor de inteiros com cinco elementos, inicializados com os valores 1, 2, 3, 4 e 5.
+
+            Para acessar elementos individuais do vetor, você pode usar um índice entre colchetes após o nome do vetor.
+            Por exemplo:
+
+            int terceiroNumero = numeros[2];
+            Isso atribui o terceiro elemento do vetor numeros (índice 2) à variável terceiroNumero.
+
+            Você também pode modificar elementos individuais do vetor usando o mesmo tipo de sintaxe de índice. Por
+            exemplo:
+
+            numeros[0] = 10;
+            Isso altera o primeiro elemento do vetor numeros (índice 0) para o valor 10.</p>
         <p class="lead">
             <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0404"
                 class="btn btn-lg btn-secondary">Saiba mais</a>
@@ -133,7 +150,6 @@
     </main>
 
     <footer class="container">
-        <p class="float-right"><a href="#">Voltar ao topo</a></p>
         <p>© Retrospectiva 5ª Academia .Net Atos <br>👨‍💻 Feito por <a href="https://isaquepemasi.vercel.app/">Isaque
                 P.
                 Marques</a>

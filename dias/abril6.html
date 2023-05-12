@@ -115,19 +115,71 @@
     </header>
 
     <main role="main" class="inner cover">
-        <h1 class="cover-heading">Aula de  ()</h1>
-        <p class="lead"><strong>Entrada e saída de dados:</strong>Em C#, um vetor é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo em
-            uma única sequência contígua de memória. Cada elemento é acessado por um índice que representa sua posição
-            no vetor.
+        <h1 class="cover-heading">Aula de Switch & Case, estrutura de condição e Calculadora em C# (Ricardo Frohlich da Silva)</h1>
+        <p class="lead"><strong>"Switch" e "Case":</strong> "Switch" e "Case" são construções de controle de fluxo em C# que permitem que um bloco de código seja executado com base no valor de uma expressão.
 
-            Para criar um vetor em C#, você pode declarar uma variável com um tipo de dados de vetor, seguido por um par
-            de colchetes vazio [] para indicar que é um vetor. Por exemplo:
-
-            int[] numeros;</p>
+            O "Switch" é usado para avaliar uma expressão e determinar qual bloco de código deve ser executado com base no valor da expressão. Em seguida, o "Case" é usado para especificar uma ou mais opções de valor para a expressão.
+            
+            Por exemplo, o seguinte código C# usa "Switch" e "Case" para determinar o dia da semana com base em um valor numérico:
+            
+            
+            int diaSemana = 4;
+            string nomeDia;
+            
+            switch (diaSemana)
+            {
+                case 1:
+                    nomeDia = "Domingo";
+                    break;
+                case 2:
+                    nomeDia = "Segunda-feira";
+                    break;
+                case 3:
+                    nomeDia = "Terça-feira";
+                    break;
+                case 4:
+                    nomeDia = "Quarta-feira";
+                    break;
+                case 5:
+                    nomeDia = "Quinta-feira";
+                    break;
+                case 6:
+                    nomeDia = "Sexta-feira";
+                    break;
+                case 7:
+                    nomeDia = "Sábado";
+                    break;
+                default:
+                    nomeDia = "Valor inválido";
+                    break;
+            }
+            
+            Console.WriteLine("O dia da semana é {0}.", nomeDia);
+            Neste exemplo, o valor da variável "diaSemana" é 4, então o bloco de código para o "Case" 4 é executado, atribuindo "Quarta-feira" à variável "nomeDia". Note que o "break" é usado para sair do bloco de código após a opção correta ter sido encontrada. Se não houver correspondência de valor, o bloco de código "default" será executado.</p>
             <hr class="featurette-divider">
+            <p class="lead"><strong>Estruturas de condição:</strong>	 Em C#, as estruturas de condição são utilizadas para tomar decisões com base em uma expressão ou condição específica. Existem duas estruturas de condição principais em C#: o "if" e o "switch".
 
+                "if": A estrutura "if" é utilizada para testar uma condição específica e executar um bloco de código caso a condição seja verdadeira. A sintaxe básica é a seguinte:
+                
+                    if (condição) {
+                      // bloco de código a ser executado caso a condição seja verdadeira
+                    }
+                
+                É possível adicionar cláusulas adicionais à estrutura "if", como "else if" e "else", para testar condições adicionais e executar blocos de código alternativos. A sintaxe completa é a seguinte:
+                
+                    if (condição1) {
+                      // bloco de código a ser executado caso a condição1 seja verdadeira
+                    }
+                    else if (condição2) {
+                      // bloco de código a ser executado caso a condição2 seja verdadeira
+                    }
+                    else {
+                      // bloco de código a ser executado caso nenhuma das condições anteriores seja verdadeira
+                    }</p>
+                <hr class="featurette-divider">
+    
         <p class="lead">
-            <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0404"
+            <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0406"
                 class="btn btn-lg btn-secondary">Saiba mais</a>
         </p>
     </main>
