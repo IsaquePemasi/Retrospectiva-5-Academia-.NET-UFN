@@ -1,8 +1,0 @@
-Em: 12 de maio de 2023
-	Leitura e escrita de arquivos
-	Alexandre de O. Zamberlan
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-	Leitura de arquivos: Em C#, a classe StreamReader é usada para ler dados de um fluxo de entrada (como um arquivo, uma entrada do usuário ou um fluxo de rede).
-	Escrita de arquivos: Em C#, a classe StreamWriter é usada para escrever dados em um fluxo de saída (como um arquivo, uma saída do usuário ou um fluxo de rede).
------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0512

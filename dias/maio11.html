@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="icon" href="../img/calendar-icon.png">
+        <title>Retrospectiva</title>
+    <style>
+        .vt-augment {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vt-augment.drawer {
+            display: none;
+            width: 700px;
+            background: white;
+            border: 1px solid #e6e6e6;
+            text-align: left;
+            z-index: 102;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            box-shadow: -4px 5px 8px -3px rgba(17, 17, 17, .16);
+            animation: slideToRight 0.5s 1 forwards;
+            transform: translateX(100vw);
+        }
+
+        .vt-augment.drawer[opened] {
+            display: flex;
+            animation: slideFromRight 0.2s 1 forwards;
+        }
+
+        .vt-augment>.spinner {
+            position: absolute;
+            z-index: 199;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border: 8px solid rgba(0, 0, 0, 0.2);
+            border-left-color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1.2s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes slideFromRight {
+            0% {
+                transform: translateX(100vw);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideToRight {
+            100% {
+                transform: translateX(100vw);
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .vt-augment.drawer {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="text-center" cz-shortcut-listen="true">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">📆 Calendário</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar"
+                aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="textoNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../abril.html">Abril <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../maio.html">Maio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../junho.html">Junho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../julho.html">Julho</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Retrospectiva 5ª Academia .Net Atos
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Aula de SQL Server e SSMS
+            (Fabrício Tonetto Londero)</h1>
+        <p class="lead"><strong>SQL Server: </strong>
+             O SQL Server é um sistema de gerenciamento de banco de dados relacional (RDBMS) desenvolvido pela Microsoft Corporation. Ele fornece uma plataforma abrangente para gerenciar e organizar grandes quantidades de dados, permitindo que os usuários armazenem, recuperem e manipulem dados usando a linguagem de consulta estruturada (SQL). O SQL Server oferece suporte a uma ampla variedade de tarefas de processamento de dados, como armazenamento de dados, processamento de transações online, inteligência de negócios e análise. Ele oferece uma variedade de recursos e serviços, como segurança, backup e restauração, integração de dados e geração de relatórios para garantir que os dados sejam armazenados e gerenciados de forma eficiente e eficaz. O SQL Server pode ser instalado no local ou na nuvem e é amplamente usado em setores como finanças, saúde, varejo e governo para gerenciar dados críticos de negócios.</p>
+            <hr class="featurette-divider">
+            <p class="lead"><strong>SSMS: </strong>	 SSMS significa SQL Server Management Studio. É um aplicativo de software desenvolvido pela Microsoft usado para gerenciar e administrar bancos de dados do SQL Server. Com o SSMS, os administradores e desenvolvedores de banco de dados podem executar tarefas como criar e modificar bancos de dados, criar e executar consultas SQL, gerenciar segurança, definir configurações de banco de dados e muito mais. O SSMS é uma ferramenta poderosa que ajuda os usuários a gerenciar instâncias e bancos de dados do SQL Server de maneira eficiente e eficaz.</p>
+                <hr class="featurette-divider">
+                <p class="lead"><strong>Criação e manipulação de tabelas/colunas: </strong>	 O SSMS (SQL Server Management Studio) é um ambiente integrado de desenvolvimento para o Microsoft SQL Server. A manipulação de tabelas/colunas no SSMS é um processo de gerenciamento de dados que permite criar, alterar, excluir e modificar tabelas e colunas em um banco de dados do SQL Server. Algumas das ações comuns de manipulação de tabelas/colunas no SSMS incluem:
+
+                    1. Criar tabelas: você pode criar uma nova tabela no SSMS usando o comando "CREATE TABLE". Durante o processo de criação, você pode definir as colunas da tabela, tipos de dados, restrições e outras propriedades.
+                    
+                    2. Alterar tabelas: você pode alterar uma tabela existente no SSMS usando o comando "ALTER TABLE". Isso permite adicionar ou remover colunas, alterar as propriedades de colunas existentes, adicionar ou remover restrições, entre outras ações.
+                    
+                    3. Excluir tabelas: você pode excluir uma tabela existente no SSMS usando o comando "DROP TABLE". Isso removerá completamente a tabela e todos os seus dados do banco de dados.
+                    
+                    4. Modificar dados: você pode modificar dados em uma tabela usando o comando "UPDATE". Isso permite atualizar valores existentes em uma ou mais colunas de uma tabela.
+                    
+                    5. Consultar dados: você pode consultar os dados em uma tabela usando o comando "SELECT". Isso permite selecionar dados específicos de uma ou mais colunas de uma tabela com base em condições específicas.
+                    
+                    Em resumo, a manipulação de tabelas/colunas no SSMS é uma parte importante do gerenciamento de dados em um banco de dados do SQL Server e envolve uma variedade de comandos e ações que permitem criar, alterar, excluir e modificar dados em uma tabela.</p>
+                <hr class="featurette-divider">
+
+        <p class="lead">
+            <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0511"
+                class="btn btn-lg btn-secondary">Saiba mais</a>
+        </p>
+    </main>
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>© Retrospectiva 5ª Academia .Net Atos <br>👨‍💻 Feito por <a href="https://isaquepemasi.vercel.app/">Isaque
+                P.
+                Marques</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos customizados para esse template -->
+    <link href="cover.css" rel="stylesheet">
+    <link
+        href="data:text/css,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ddg-runtime-checks%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20"
+        rel="stylesheet" type="text/css">
+</body>
+
+</html>
