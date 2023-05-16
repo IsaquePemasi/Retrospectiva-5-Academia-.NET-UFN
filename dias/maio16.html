@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="icon" href="../img/calendar-icon.png">
+        <title>Retrospectiva</title>
+    <style>
+        .vt-augment {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vt-augment.drawer {
+            display: none;
+            width: 700px;
+            background: white;
+            border: 1px solid #e6e6e6;
+            text-align: left;
+            z-index: 102;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            box-shadow: -4px 5px 8px -3px rgba(17, 17, 17, .16);
+            animation: slideToRight 0.5s 1 forwards;
+            transform: translateX(100vw);
+        }
+
+        .vt-augment.drawer[opened] {
+            display: flex;
+            animation: slideFromRight 0.2s 1 forwards;
+        }
+
+        .vt-augment>.spinner {
+            position: absolute;
+            z-index: 199;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border: 8px solid rgba(0, 0, 0, 0.2);
+            border-left-color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1.2s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes slideFromRight {
+            0% {
+                transform: translateX(100vw);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideToRight {
+            100% {
+                transform: translateX(100vw);
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .vt-augment.drawer {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="text-center" cz-shortcut-listen="true">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">📆 Calendário</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar"
+                aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="textoNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../abril.html">Abril <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../maio.html">Maio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../junho.html">Junho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../julho.html">Julho</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Retrospectiva 5ª Academia .Net Atos
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Aula de exercícios: listas, dicionários, classe, arquivo e orientação a objetos   (Alexandre O. Zamberlan)</h1>
+        <p class="lead"><strong>Orientação a objetos </strong>	 é um paradigma de programação que se baseia na ideia de que todo elemento de um sistema de software pode ser representado como um objeto, que possui um conjunto de propriedades e métodos que podem ser utilizados para interagir com outros objetos e executar tarefas específicas.
+
+            Em C#, orientação a objetos é a base do design de classes e objetos. A linguagem C# possui suporte integrado para classes, objetos, herança, polimorfismo, encapsulamento e interfaces, tornando-a uma linguagem ideal para desenvolvimento de aplicativos orientados a objetos.
+            
+            Para implementar orientação a objetos em C#, é preciso definir classes que descrevem os objetos a serem criados, bem como seus atributos (propriedades) e comportamentos (métodos). A partir dessas definições, é possível criar instâncias dos objetos (instanciar a classe), que podem ser utilizadas para executar as funcionalidades desejadas.
+            
+            Um exemplo básico de orientação a objetos em C# seria a criação de uma classe "Pessoa" que possua propriedades como nome, idade e endereço, além de métodos como "Andar", "Falar" e "Comer". Essa classe poderia ser instanciada várias vezes para criar objetos Pessoa diferentes, cada um com seus próprios valores para as propriedades e comportamentos definidos pelos métodos.</p>
+            <hr class="featurette-divider">
+        <p class="lead"><strong>Leitura de arquivos: </strong>	 Em C#, a classe StreamReader é usada para ler dados de um fluxo de entrada (como um arquivo, uma entrada do usuário ou um fluxo de rede).
+        </p>
+        <hr class="featurette-divider">
+        <p class="lead"><strong>Escrita de arquivos: </strong> Em C#, a classe StreamWriter é usada para escrever dados em um fluxo de saída (como um arquivo, uma saída do usuário ou um fluxo de rede).</p>
+            <hr class="featurette-divider">
+        <p class="lead"><strong>Entrada e saída de dados:</strong>Em C#, um vetor é uma estrutura de dados que armazena uma coleção de elementos do mesmo tipo em
+            uma única sequência contígua de memória. Cada elemento é acessado por um índice que representa sua posição
+            no vetor.
+
+            Para criar um vetor em C#, você pode declarar uma variável com um tipo de dados de vetor, seguido por um par
+            de colchetes vazio [] para indicar que é um vetor. Por exemplo:
+
+            int[] numeros;</p>
+            <hr class="featurette-divider">
+            <p class="lead"><strong>Classe: </strong>
+                Em C#, uma classe é uma estrutura fundamental para a criação de objetos e a definição de seu comportamento. Ela é uma abstração que encapsula dados (atributos) e comportamentos (métodos) relacionados em uma única unidade.</p>
+            <hr class="featurette-divider">
+            <p class="lead"><strong>dicionário: </strong>
+                Em C#, um dicionário é uma estrutura de dados que permite armazenar pares de chave-valor, em que cada chave é única e associada a um valor correspondente. É semelhante a um dicionário real, em que as palavras (chaves) têm definições (valores).</p>
+            <hr class="featurette-divider">
+            <p class="lead"><strong>listas: </strong>
+                Em C#, as listas são uma estrutura de dados que permitem armazenar e manipular coleções de elementos de forma dinâmica. Você pode definir listas em C# usando a classe genérica List<T> da biblioteca padrão System.Collections.Generic.</p>
+            <hr class="featurette-divider">
+
+        <p class="lead">
+            <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0516"
+                class="btn btn-lg btn-secondary">Saiba mais</a>
+        </p>
+    </main>
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>© Retrospectiva 5ª Academia .Net Atos <br>👨‍💻 Feito por <a href="https://isaquepemasi.vercel.app/">Isaque
+                P.
+                Marques</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos customizados para esse template -->
+    <link href="cover.css" rel="stylesheet">
+    <link
+        href="data:text/css,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ddg-runtime-checks%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20"
+        rel="stylesheet" type="text/css">
+</body>
+
+</html>
