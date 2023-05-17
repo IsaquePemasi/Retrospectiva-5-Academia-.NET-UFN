@@ -11,6 +11,11 @@ namespace ConsoleApp1
     {
         public string Marca { get; set; }
         public string Modelo { get; set; }
+
+        public void Dirigir()
+        {
+            Console.WriteLine("Dirigindo o "+this.Marca + this.Modelo);
+        }
     }
 }
 
