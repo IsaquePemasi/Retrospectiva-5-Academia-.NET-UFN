@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="icon" href="../img/calendar-icon.png">
+        <title>Retrospectiva</title>
+    <style>
+        .vt-augment {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .vt-augment.drawer {
+            display: none;
+            width: 700px;
+            background: white;
+            border: 1px solid #e6e6e6;
+            text-align: left;
+            z-index: 102;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            box-shadow: -4px 5px 8px -3px rgba(17, 17, 17, .16);
+            animation: slideToRight 0.5s 1 forwards;
+            transform: translateX(100vw);
+        }
+
+        .vt-augment.drawer[opened] {
+            display: flex;
+            animation: slideFromRight 0.2s 1 forwards;
+        }
+
+        .vt-augment>.spinner {
+            position: absolute;
+            z-index: 199;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+            border: 8px solid rgba(0, 0, 0, 0.2);
+            border-left-color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1.2s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes slideFromRight {
+            0% {
+                transform: translateX(100vw);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideToRight {
+            100% {
+                transform: translateX(100vw);
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .vt-augment.drawer {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="text-center" cz-shortcut-listen="true">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">📆 Calendário</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar"
+                aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="textoNavbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../abril.html">Abril <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../maio.html">Maio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../junho.html">Junho</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../julho.html">Julho</a>
+                    </li>
+                </ul>
+                <span class="navbar-text">
+                    Retrospectiva 5ª Academia .Net Atos
+                </span>
+            </div>
+        </nav>
+    </header>
+
+    <main role="main" class="inner cover">
+        <h1 class="cover-heading">Aula de Windows form, OO e listas (Alexandre O. Zamberlan)</h1>
+        <p class="lead"><strong>Windows Form: </strong> é uma estrutura de interface gráfica do usuário (GUI) fornecida pela Microsoft para criar aplicativos de desktop no sistema operacional Windows. Faz parte do .NET Framework e é usado principalmente no desenvolvimento de aplicativos do Windows usando linguagens como C# ou Visual Basic.
+
+            Um Windows Form fornece um contêiner visual para projetar e exibir controles como botões, rótulos, caixas de texto e vários outros componentes. Ele permite que os desenvolvedores criem aplicativos interativos com uma interface de usuário avançada, permitindo a programação orientada a eventos.</p>
+            <hr class="featurette-divider">
+            <p class="lead"><strong>Orientação a Objetos: </strong>
+                OO em C# refere-se a "Orientação a Objetos" em C#, que é um paradigma de programação que organiza o código em torno de objetos, que representam entidades do mundo real ou conceitos abstratos.
+                
+                Em C#, a OO é implementada usando classes, que são as estruturas fundamentais para criar objetos. Uma classe é uma estrutura que define as propriedades (atributos) e comportamentos (métodos) de um objeto.
+
+                Um Windows Form fornece um contêiner visual para projetar e exibir controles como botões, rótulos, caixas de texto e vários outros componentes. Ele permite que os desenvolvedores criem aplicativos interativos com uma interface de usuário avançada, permitindo a programação orientada a eventos.</p>
+                <hr class="featurette-divider">
+                <p class="lead"><strong>Listas: </strong>
+                    Em C#, as listas são uma estrutura de dados que permitem armazenar e manipular coleções de elementos de forma dinâmica. Você pode definir listas em C# usando a classe genérica List<T> da biblioteca padrão System.Collections.Generic. Aqui está um exemplo de como definir uma lista em C#:</p>
+                    <hr class="featurette-divider">
+
+        <p class="lead">
+            <a href="https://github.com/IsaquePemasi/Retrospectiva/tree/master/a0519"
+                class="btn btn-lg btn-secondary">Saiba mais</a>
+        </p>
+    </main>
+
+    <footer class="container">
+        <p class="float-right"><a href="#">Voltar ao topo</a></p>
+        <p>© Retrospectiva 5ª Academia .Net Atos <br>👨‍💻 Feito por <a href="https://isaquepemasi.vercel.app/">Isaque
+                P.
+                Marques</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- Principal JavaScript do Bootstrap
+    ================================================== -->
+    <!-- Foi colocado no final para a página carregar mais rápido -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <!-- Principal CSS do Bootstrap -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos customizados para esse template -->
+    <link href="cover.css" rel="stylesheet">
+    <link
+        href="data:text/css,%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20ddg-runtime-checks%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20display%3A%20none%3B%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%7D%0A%20%20%20%20%20%20%20%20%20%20%20%20"
+        rel="stylesheet" type="text/css">
+</body>
+
+</html>
