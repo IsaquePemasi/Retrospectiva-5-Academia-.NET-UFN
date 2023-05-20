@@ -1,3 +1,5 @@
+// 2) Escreva um programa em C# e no Visual Studio para calcular a média aritmética entre quatro números quaisquer.
+
 using System;
 
 namespace exerciciosAcademia

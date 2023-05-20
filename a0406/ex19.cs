@@ -1,95 +1,71 @@
+// 19 - Ajuste o exercício 18 de maneira que mostre os valores informados em ordem crescente.
+
 using System;
 
-namespace Calculator
+namespace OrdemCrescente
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Menu();
-        }
-        static void Soma()
-        {
-            Console.Clear();
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o primeiro valor:");
+            int valor1 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo valor:");
+            int valor2 = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("");
+            Console.WriteLine("Digite o terceiro valor:");
+            int valor3 = int.Parse(Console.ReadLine());
 
-            float resultado = v1 + v2;
+            int menorValor, meioValor, maiorValor;
 
-            Console.WriteLine("O resultado da soma é " + resultado);
-            Console.ReadKey();
-            Menu();
-
-        }
-        static void Subtracao()
-        {
-            Console.Clear();
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
-            float resultado = v1 - v2;
-            Console.WriteLine($"O resultado da subtração é {resultado}");
-
-            Console.ReadKey();
-            Menu();
-
-
-        }
-        static void Divisao()
-        {
-            Console.Clear();
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
-            float resultado = v1 / v2;
-            Console.WriteLine($"O resultado da divisão é {resultado}");
-            Console.ReadKey();
-            Menu();
-
-        }
-        static void Multiplicacao()
-        {
-            Console.Clear();
-            Console.WriteLine("Primeiro valor: ");
-            float v1 = float.Parse(Console.ReadLine());
-            Console.WriteLine("Segundo valor: ");
-            float v2 = float.Parse(Console.ReadLine());
-            float resultado = v1 * v2;
-            Console.WriteLine($"O resultado da multiplicação é {resultado}");
-            Console.ReadKey();
-            Menu();
-
-
-        }
-
-        static void Menu()
-        {
-            Console.Clear();
-            Console.WriteLine("------------------------------------------------");
-            Console.WriteLine("1 - Soma");
-            Console.WriteLine("2 - Subtração");
-            Console.WriteLine("3 - Divisão");
-            Console.WriteLine("4 - Multiplicação");
-            Console.WriteLine("5 - Sair");
-            Console.WriteLine("------------------------------------------------");
-            Console.WriteLine("Escolha uma opção acima: ");
-            short opcao = short.Parse(Console.ReadLine());
-            switch (opcao)
+            if (valor1 < valor2 && valor1 < valor3)
             {
-                case 1: Soma(); break;
-                case 2: Subtracao(); break;
-                case 3: Divisao(); break;
-                case 4: Multiplicacao(); break;
-                case 5: System.Environment.Exit(0); break;
-                default: Menu(); break;
+                menorValor = valor1;
+
+                if (valor2 < valor3)
+                {
+                    meioValor = valor2;
+                    maiorValor = valor3;
+                }
+                else
+                {
+                    meioValor = valor3;
+                    maiorValor = valor2;
+                }
             }
+            else if (valor2 < valor3)
+            {
+                menorValor = valor2;
+
+                if (valor1 < valor3)
+                {
+                    meioValor = valor1;
+                    maiorValor = valor3;
+                }
+                else
+                {
+                    meioValor = valor3;
+                    maiorValor = valor1;
+                }
+            }
+            else
+            {
+                menorValor = valor3;
+
+                if (valor1 < valor2)
+                {
+                    meioValor = valor1;
+                    maiorValor = valor2;
+                }
+                else
+                {
+                    meioValor = valor2;
+                    maiorValor = valor1;
+                }
+            }
+
+            Console.WriteLine($"Valores em ordem crescente: {menorValor}, {meioValor}, {maiorValor}");
         }
     }
 }

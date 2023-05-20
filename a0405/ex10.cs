@@ -6,7 +6,7 @@ namespace testando
     internal class Program
     {
         static void Main(string[] args)
-        {
+        {   
             Console.WriteLine("Dados do primeiro atleta");
             Console.WriteLine("nome do atleta: ");
             string nome1 = Console.ReadLine();
