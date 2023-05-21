@@ -6,7 +6,7 @@ namespace asja
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Digite o inicio ");
+            Console.WriteLine("Digite o inicio");
             int inicio = int.Parse(Console.ReadLine());
             Console.WriteLine("Digite o fim");
             int fim = int.Parse(Console.ReadLine());
