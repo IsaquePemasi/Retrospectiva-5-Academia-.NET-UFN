@@ -17,7 +17,6 @@ namespace Aula
             int joao = 0, zeca = 0, branco = 0, nulo = 0, total;
             for (int i = 0; true; i++)
             {
-
                 Console.WriteLine("Digite o nome de um candidato: ");
                 Console.WriteLine("JOAO\nZECA\nBRANCO\nFIM");
                 string candidato = Console.ReadLine().ToUpper();
@@ -65,7 +64,6 @@ namespace Aula
             {
                 Console.WriteLine("BRANCO ganhou a votação!");
             }
-
         }
     }
 }
