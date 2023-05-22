@@ -36,5 +36,10 @@ namespace WinFormsApp1
         {
 
         }
+
+        private void textBoxListaEmails_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

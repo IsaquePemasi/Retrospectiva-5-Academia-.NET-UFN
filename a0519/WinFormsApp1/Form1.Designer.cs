@@ -107,6 +107,7 @@
             textBoxListaEmails.ScrollBars = ScrollBars.Vertical;
             textBoxListaEmails.Size = new Size(293, 214);
             textBoxListaEmails.TabIndex = 7;
+            textBoxListaEmails.TextChanged += textBoxListaEmails_TextChanged;
             // 
             // buttonLimpar
             // 
