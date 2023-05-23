@@ -71,6 +71,7 @@
             textBoxNome.Name = "textBoxNome";
             textBoxNome.Size = new Size(385, 23);
             textBoxNome.TabIndex = 3;
+            textBoxNome.TextChanged += textBoxNome_TextChanged;
             // 
             // label2
             // 
@@ -97,6 +98,7 @@
             textBoxEmail.ReadOnly = true;
             textBoxEmail.Size = new Size(385, 23);
             textBoxEmail.TabIndex = 6;
+            textBoxEmail.TextChanged += textBoxEmail_TextChanged;
             // 
             // textBoxListaEmails
             // 
