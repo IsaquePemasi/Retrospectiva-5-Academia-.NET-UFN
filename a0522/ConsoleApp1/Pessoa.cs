@@ -8,5 +8,19 @@ namespace ConsoleApp1
 {
     internal class Pessoa
     {
+        public string Nome { get; set; }
+        public string Telefone { get; set; }
+        public string Cidade { get; set; }
+        public string RG { get; set; }
+        public string CPF { get; set; }
+
+        public Pessoa(string nome, string telefone, string cidade, string rg, string cpf)
+        {
+            Nome = nome;
+            Telefone = telefone;
+            Cidade = cidade;
+            RG = rg;
+            CPF = cpf;
+        }
     }
 }
