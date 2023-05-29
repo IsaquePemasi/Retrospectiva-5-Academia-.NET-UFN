@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "FvMac6TAwKZgkwCjvSSQV0w6nKkzWQbrTY4HJbDXRXTeKS/WaK+L4APD/pfYfCAWQUaR/RQpyXNS/WqqXF0pSA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Isaque\\Desktop\\Retrospectiva\\a0529\\WinFormsApp1\\WinFormsApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Isaque\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Isaque\\.nuget\\packages\\soapformatter\\1.1.9\\soapformatter.1.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}
