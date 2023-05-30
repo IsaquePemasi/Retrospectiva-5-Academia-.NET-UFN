@@ -1,0 +1,17 @@
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\bin\Debug\net6.0-windows\Exercicio.exe
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\bin\Debug\net6.0-windows\Exercicio.deps.json
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\bin\Debug\net6.0-windows\Exercicio.runtimeconfig.json
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\bin\Debug\net6.0-windows\Exercicio.dll
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\bin\Debug\net6.0-windows\Exercicio.pdb
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.csproj.AssemblyReference.cache
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.Form1.resources
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.csproj.GenerateResource.cache
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.AssemblyInfoInputs.cache
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.AssemblyInfo.cs
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.csproj.CoreCompileInputs.cache
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.dll
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\refint\Exercicio.dll
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.pdb
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\Exercicio.genruntimeconfig.cache
+C:\Users\Isaque\Desktop\Retrospectiva\a0530\Exercicio\obj\Debug\net6.0-windows\ref\Exercicio.dll
