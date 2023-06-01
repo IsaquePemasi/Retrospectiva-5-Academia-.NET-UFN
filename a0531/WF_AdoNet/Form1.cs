@@ -13,15 +13,9 @@ namespace WF_AdoNet
         {
             Banco bd = new Banco();
 
-
-
             string sql = "select * from pessoas";
 
-
-
             DataTable dt = new DataTable();
-
-
 
             dt = bd.executarConsultaGenerica(sql);
 
@@ -67,6 +61,39 @@ namespace WF_AdoNet
             else
             {
                 MessageBox.Show("erro ao cadastrar");
+            }
+        }
+
+        private void btn_excluir_Click(object sender, EventArgs e)
+        {
+            Pessoa p = new Pessoa();
+            p.id = int.Parse(textBoxid.Text);
+
+            if (p.excluir())
+            {
+                MessageBox.Show("excluido com sucesso");
+            }
+            else
+            {
+                MessageBox.Show("erro ao excluir");
+            }
+
+        }
+
+        private void btn_atualizar_Click(object sender, EventArgs e)
+        {
+            Pessoa p = new Pessoa();
+            p.nome = textBoxNome.Text;
+            p.profissao = textBoxProfissao.Text;
+            p.id = int.Parse(textBoxid.Text);
+
+            if (p.atualizar())
+            {
+                MessageBox.Show("atualizado com sucesso");
+            }
+            else
+            {
+                MessageBox.Show("erro ao atualizar");
             }
         }
     }

@@ -37,6 +37,10 @@
             label1 = new Label();
             label2 = new Label();
             btn_cadastrar = new Button();
+            btn_excluir = new Button();
+            btn_atualizar = new Button();
+            label3 = new Label();
+            textBoxid = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -121,11 +125,51 @@
             btn_cadastrar.UseVisualStyleBackColor = true;
             btn_cadastrar.Click += btn_cadastrar_Click;
             // 
+            // btn_excluir
+            // 
+            btn_excluir.Location = new Point(258, 222);
+            btn_excluir.Name = "btn_excluir";
+            btn_excluir.Size = new Size(75, 23);
+            btn_excluir.TabIndex = 9;
+            btn_excluir.Text = "Excluir";
+            btn_excluir.UseVisualStyleBackColor = true;
+            btn_excluir.Click += btn_excluir_Click;
+            // 
+            // btn_atualizar
+            // 
+            btn_atualizar.Location = new Point(423, 222);
+            btn_atualizar.Name = "btn_atualizar";
+            btn_atualizar.Size = new Size(75, 23);
+            btn_atualizar.TabIndex = 10;
+            btn_atualizar.Text = "Atualizar";
+            btn_atualizar.UseVisualStyleBackColor = true;
+            btn_atualizar.Click += btn_atualizar_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(313, 190);
+            label3.Name = "label3";
+            label3.Size = new Size(20, 15);
+            label3.TabIndex = 11;
+            label3.Text = "id:";
+            // 
+            // textBoxid
+            // 
+            textBoxid.Location = new Point(353, 187);
+            textBoxid.Name = "textBoxid";
+            textBoxid.Size = new Size(100, 23);
+            textBoxid.TabIndex = 12;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBoxid);
+            Controls.Add(label3);
+            Controls.Add(btn_atualizar);
+            Controls.Add(btn_excluir);
             Controls.Add(btn_cadastrar);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -154,5 +198,9 @@
         private Label label1;
         private Label label2;
         private Button btn_cadastrar;
+        private Button btn_excluir;
+        private Button btn_atualizar;
+        private Label label3;
+        private TextBox textBoxid;
     }
 }

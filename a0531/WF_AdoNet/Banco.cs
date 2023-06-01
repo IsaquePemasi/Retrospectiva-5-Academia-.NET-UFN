@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Microsoft.VisualBasic.ApplicationServices;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,7 +11,10 @@ namespace WF_AdoNet
 {
     internal class Banco
     {
-        private string stringConexao = @"Server=.\SQLExpress;AttachDbFilename=|DataDirectory|adonet.mdf;Database=adonet;Trusted_Connection=Yes;Source=localhost\SQLExpress;TrustServerCertificate=True";
+        private string stringConexao = @"Server=localhost; Database=adonet; User ID=isaque; Password=1234; TrustServerCertificate=True;trusted_connection=true;encrypt=false;";
+
+        
+
 
         //private string stringConexao = "Data Source=.\\SQLExpress;" +
         //            "Initial Catalog=adonet; User ID=atos;" +
