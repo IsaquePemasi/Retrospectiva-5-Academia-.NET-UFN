@@ -32,7 +32,6 @@
             txbNome = new TextBox();
             dataGridView1 = new DataGridView();
             btn_filtrar = new Button();
-            textBoxNome = new TextBox();
             textBoxProfissao = new TextBox();
             label1 = new Label();
             label2 = new Label();
@@ -41,6 +40,10 @@
             btn_atualizar = new Button();
             label3 = new Label();
             textBoxid = new TextBox();
+            textBoxNome = new TextBox();
+            textBox1 = new TextBox();
+            label4 = new Label();
+            button1 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -82,13 +85,6 @@
             btn_filtrar.Text = "Filtrar";
             btn_filtrar.UseVisualStyleBackColor = true;
             btn_filtrar.Click += btn_filtrar_Click;
-            // 
-            // textBoxNome
-            // 
-            textBoxNome.Location = new Point(79, 168);
-            textBoxNome.Name = "textBoxNome";
-            textBoxNome.Size = new Size(115, 23);
-            textBoxNome.TabIndex = 4;
             // 
             // textBoxProfissao
             // 
@@ -161,11 +157,47 @@
             textBoxid.Size = new Size(100, 23);
             textBoxid.TabIndex = 12;
             // 
+            // textBoxNome
+            // 
+            textBoxNome.Location = new Point(79, 168);
+            textBoxNome.Name = "textBoxNome";
+            textBoxNome.Size = new Size(115, 23);
+            textBoxNome.TabIndex = 4;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(595, 182);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(115, 23);
+            textBox1.TabIndex = 13;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(595, 157);
+            label4.Name = "label4";
+            label4.Size = new Size(46, 15);
+            label4.TabIndex = 14;
+            label4.Text = "Pessoa:";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(595, 211);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 15;
+            button1.Text = "Pessoa";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(label4);
+            Controls.Add(textBox1);
             Controls.Add(textBoxid);
             Controls.Add(label3);
             Controls.Add(btn_atualizar);
@@ -193,7 +225,6 @@
         private TextBox txbNome;
         private DataGridView dataGridView1;
         private Button btn_filtrar;
-        private TextBox textBoxNome;
         private TextBox textBoxProfissao;
         private Label label1;
         private Label label2;
@@ -202,5 +233,9 @@
         private Button btn_atualizar;
         private Label label3;
         private TextBox textBoxid;
+        private TextBox textBoxNome;
+        private TextBox textBox1;
+        private Label label4;
+        private Button button1;
     }
 }

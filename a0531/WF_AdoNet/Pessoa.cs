@@ -133,5 +133,55 @@ namespace WF_AdoNet
             }
 
         }
+
+        public Pessoa consultaPessoa(int id)
+        {
+            Banco bd = new Banco();
+
+
+
+            try
+            {
+                SqlConnection cn = bd.abrirConexao();
+                SqlCommand command = new SqlCommand("select * from pessoas", cn);
+
+
+
+                SqlDataReader reader = command.ExecuteReader();
+
+
+
+                while (reader.Read())
+                {
+                    if (reader.GetInt32(0) == id)
+                    {
+                        this.id = reader.GetInt32(0);
+                        this.nome = reader.GetString(1);
+                        this.profissao = reader.GetString(2);
+
+
+
+                        return this;
+                    }
+                }
+
+
+
+                return null;
+
+
+
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+            finally
+            {
+                bd.fecharConexao();
+            }
+        }
+
+
     }
 }

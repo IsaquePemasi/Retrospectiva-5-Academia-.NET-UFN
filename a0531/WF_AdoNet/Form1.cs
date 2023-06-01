@@ -96,5 +96,15 @@ namespace WF_AdoNet
                 MessageBox.Show("erro ao atualizar");
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Pessoa p = new Pessoa();
+            p = p.consultaPessoa(int.Parse(txbId.Text));
+
+
+
+            lblNome.Text = p.nome;
+        }
     }
 }
