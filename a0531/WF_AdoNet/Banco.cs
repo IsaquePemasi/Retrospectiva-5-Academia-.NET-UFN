@@ -11,7 +11,12 @@ namespace WF_AdoNet
 {
     internal class Banco
     {
-        private string stringConexao = @"Server=localhost; Database=adonet; User ID=isaque; Password=1234; TrustServerCertificate=True;trusted_connection=true;encrypt=false;";
+        private string stringConexao = @"Data Source=localhost\\SQLEXPRESS;"" + 
+                                ""Initial Catalog=adonet;"" +
+                                ""User ID=atos;"" +
+                                ""Password=Senh@_12331-05;"" +
+                                ""Language=Portuguese;"" +
+                                ""TrustServerCertificate=True;";
 
         
 
