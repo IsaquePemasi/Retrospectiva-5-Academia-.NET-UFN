@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jzzEVhHOKF2nBPnFHgcK/wxzSsSg9oiOOuangujnTktQ1W8gavH4dS8Gb+vxE7RERWxN3nSe6mjbtyBQliaD3g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Isaque\\Desktop\\Retrospectiva\\a0614\\ConsumirAPI\\ConsumirAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Isaque\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
