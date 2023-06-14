@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Net.Http.Json;
 
 namespace ConsumirAPI
 {
@@ -39,8 +40,22 @@ namespace ConsumirAPI
                         }
                         else
                         {
-                            Console.Out.WriteLineAsync();
+                            Console.WriteLine("Erro:" + resposta.StatusCode.ToString());
                         }
+                        foreach (Pessoa p in pessoas)
+                        {
+                            Console.WriteLine("ID: " + p.id + "\nNome: " + p.nome);
+                        }
+                            break;
+                    case 2: 
+                        Pessoa pessoa = new Pessoa();
+                        Console.WriteLine("Digite o nome da pessoa: ");
+                        pessoa.nome = Console.ReadLine();
+
+                        HttpClient cliente = new HttpClient();
+                        HttpResponseMessage respostaPost = await cliente.PostAsJsonAsync(BaseUrl + "API/pessoas", pessoa);
+
+                        Console.WriteLine("Retorno: " + respostaPost.StatusCode);
 
                         break;
                 }
