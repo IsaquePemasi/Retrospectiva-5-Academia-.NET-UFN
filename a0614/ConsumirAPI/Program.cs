@@ -58,6 +58,24 @@ namespace ConsumirAPI
                         Console.WriteLine("Retorno: " + respostaPost.StatusCode);
 
                         break;
+                    case 3: 
+                        int idPut;
+                        Console.WriteLine("Digite o ID para ser alterado: "); 
+                        idPut = int.Parse(Console.ReadLine());
+                        Pessoa pessoaPut = new Pessoa();
+                        Console.WriteLine("Digite o nome da pessoa: ");
+                        pessoaPut.nome = Console.ReadLine(); 
+                        HttpClient clientePut = new HttpClient();
+                        HttpResponseMessage respostaPut = await clientePut.PutAsJsonAsync(BaseUrl + "API/pessoas/" + idPut, pessoaPut);
+                        Console.WriteLine("Retorno: " + respostaPut.StatusCode); break;
+                    case 4: int idP;
+                        Console.WriteLine("Digite o ID para ser excluido: ");
+                        idP = int.Parse(Console.ReadLine()); 
+                        HttpClient clienteDelete = new HttpClient();
+                            HttpResponseMessage respostaDelete = await clienteDelete.DeleteAsync(BaseUrl + "API/pessoas/" + idP);   
+                        //Console.WriteLine(BaseUrl + "API/pessoas/" + idP);
+                        Console.WriteLine("Retorno: " + respostaDelete.StatusCode);
+                        break;
                 }
             }while (op != 0);   
         }
