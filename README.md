@@ -79,9 +79,6 @@ Quarta Turma de formação DotNET entre a empresa Atos e a Universidade Francisc
 - Seletores
 - Eventos
 - Biblioteca jQuery
-
-  <h2 align="center">Autor</h2>
-<a href="https://github.com/IsaquePemasi/"><img src="https://avatars.githubusercontent.com/u/76749511?v=4" width=115></a>
 - Frameworks
 
 ## Ambiente de desenvolvimento *vs* produção
@@ -89,3 +86,5 @@ Quarta Turma de formação DotNET entre a empresa Atos e a Universidade Francisc
 - Hospedagem
 - Compatibilidade
 - Protocolos e DNS
+  <h2 align="center">Autor</h2>
+<a href="https://github.com/IsaquePemasi/"><img src="https://avatars.githubusercontent.com/u/76749511?v=4" width=115></a>
