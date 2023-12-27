@@ -138,14 +138,10 @@ namespace WF_AdoNet
         {
             Banco bd = new Banco();
 
-
-
             try
             {
                 SqlConnection cn = bd.abrirConexao();
                 SqlCommand command = new SqlCommand("select * from pessoas", cn);
-
-
 
                 SqlDataReader reader = command.ExecuteReader();
 

@@ -19,7 +19,7 @@ namespace WF_AdoNet
                                 ""TrustServerCertificate=True;";
 
         
-
+a   
 
         //private string stringConexao = "Data Source=.\\SQLExpress;" +
         //            "Initial Catalog=adonet; User ID=atos;" +

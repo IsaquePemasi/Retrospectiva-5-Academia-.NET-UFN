@@ -79,6 +79,13 @@ insert into LIVROAUTOR values('8532512062',1);
 insert into LIVROAUTOR values('8532512062',2);
 select *from LIVROAUTOR;
 
+--7
+select livros.isbn, livros.titulo, livros.ano, editoras.nome, categorias.nome
+from livros, editoras, categorias
+where livros.fk_editora = editoras.id and
+	livros.fk_categoria = categorias.id
+order by livros.titulo, livros.ano asc
+
 -- 8
 select livro.isbn, livro.titulo, 
     LIVRO.ano_publicacao, 
